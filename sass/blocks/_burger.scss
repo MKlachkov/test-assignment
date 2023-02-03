@@ -6,17 +6,24 @@
     padding-left: 20px;
     padding-top: 30px;
     background: $yellow;
-    z-index: 100000;
+    z-index: 10000;
     display: none;
     padding-top: 11px;
+    animation: ShowMenu .5s ease-in-out;
     &>.socialMedia>.socialsMedia>li{
         width: 32px;
         height: 32px;
-        background: #ECB200;
+        background: $yellow-dark;
+        margin-top: 11px;
+        &:hover{
+            background: $red;
+        }
     }
 }
 .burger{
     display: none;
+    width: 23px;
+    height: 17px;
 }
 .visible{
     display: block;
@@ -32,9 +39,16 @@
     color: $brown;
     padding-bottom: 25px;
     margin-bottom: 25px;
-    border-bottom: 1px solid #ECB200;
-    // max-width: 320px;
+    border-bottom: 1px solid $yellow-dark;
     &>li+li {
         margin-top: 20px;
+    }
+}
+@keyframes ShowMenu{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
     }
 }

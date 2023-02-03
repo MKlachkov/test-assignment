@@ -70,9 +70,15 @@
         line-height: 21px;
         padding: 6px 33px;
         word-wrap: break-word;
+        width: 170px;
     }
     .button.registration{
         display: none;
+    }
+    .header__bottom{
+        &::before,&::after{
+            top: 300px;
+        }
     }
 }
 @media(max-width:900px){
@@ -185,6 +191,9 @@
 @media(max-width:400px){
     .button.registration{
         display: none;
+    }
+    .header__bottom__title{
+        font-size: 34px;
     }
     .button{
         &.login{

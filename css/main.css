@@ -363,16 +363,22 @@ img {
   padding-left: 20px;
   padding-top: 30px;
   background: #FFCD00;
-  z-index: 100000;
+  z-index: 10000;
   display: none;
-  padding-top: 11px; }
+  padding-top: 11px;
+  animation: ShowMenu .5s ease-in-out; }
   .burger__menu > .socialMedia > .socialsMedia > li {
     width: 32px;
     height: 32px;
-    background: #ECB200; }
+    background: #ECB200;
+    margin-top: 11px; }
+    .burger__menu > .socialMedia > .socialsMedia > li:hover {
+      background: #e63000; }
 
 .burger {
-  display: none; }
+  display: none;
+  width: 23px;
+  height: 17px; }
 
 .visible {
   display: block; }
@@ -392,6 +398,11 @@ img {
   .burger__list__first > li + li {
     margin-top: 20px; }
 
+@keyframes ShowMenu {
+  0% {
+    transform: translateY(-100%); }
+  100% {
+    transform: translateY(0); } }
 @media (min-width: 1001px) {
   .person {
     top: 70px;
@@ -459,10 +470,14 @@ img {
     font-size: 14px;
     line-height: 21px;
     padding: 6px 33px;
-    word-wrap: break-word; }
+    word-wrap: break-word;
+    width: 170px; }
 
   .button.registration {
-    display: none; } }
+    display: none; }
+
+  .header__bottom::before, .header__bottom::after {
+    top: 300px; } }
 @media (max-width: 900px) {
   .person {
     left: 150px;
@@ -561,6 +576,9 @@ img {
 @media (max-width: 400px) {
   .button.registration {
     display: none; }
+
+  .header__bottom__title {
+    font-size: 34px; }
 
   .button.login {
     padding: 6px 22px; }

@@ -1,7 +1,7 @@
 .header {
     position: relative;
     z-index: 1000;
-    background: linear-gradient(180deg, #ECB200 0%, #FFCF00 78.83%);
+    background: linear-gradient(180deg, $yellow-dark 0%, #FFCF00 78.83%);
     &__top{
         display: flex;
         justify-content: space-between;
