@@ -1,0 +1,30 @@
+.modal{
+    width: 500px;
+    height: 250px;
+    background-color: #fff;
+    border: 1px solid  #000;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    z-index: 20000;
+    justify-content: space-between;
+    display: none;
+    animation: modal .3s ease-in-out;
+    &>.close,&>.modal-end{
+        // max-width: 50px;
+        max-height: 50px;
+    }
+    .modal-end{
+        padding: 10px 20px;
+    }
+}
+@keyframes modal {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

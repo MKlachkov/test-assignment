@@ -1,0 +1,92 @@
+.participants {
+    padding-top: 66px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 46px;
+
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        color: #5A1404;
+        margin-bottom: 23px;
+    }
+
+    &__box {
+        &__content {
+            display: flex;
+        }
+    }
+    position: relative;
+    &::before{
+        content:"";
+        position: absolute;
+        width: 45px;
+        height: 40px;
+        background-image: url("./../images/spiral.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: -26px;
+        left: 236px;
+        z-index: 1000;
+    }
+}
+
+.arrow {
+    &__left {}
+
+    &__right {
+        rotate: 180deg;
+    }
+}
+
+.swiper {
+    max-width: 1030px;
+    height: 388px;
+
+    &-pagination {
+
+        // transform: translateY(50px);
+        // position: absolute;
+        // top: 413px;
+        &-bullet {
+            background: #5B1A0D;
+            &-active {
+                background: none;
+                border: 1px solid #5B1A0D;
+                width: 11px;
+                height: 11px;
+            }
+            background: #5B1A0D;
+            border:1px solid #5B1A0D;
+            width: 11px;
+            height: 11px;
+            opacity: 1;
+        }
+    }
+
+    &-slide {
+        min-width: 200px;
+        min-height: 260px;
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &>img {
+            margin-bottom: 22px;
+        }
+    }
+}
+
+.product {
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    &__info {
+        text-align: center;
+        color: #5A1404;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}

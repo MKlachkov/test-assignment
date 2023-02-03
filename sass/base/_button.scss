@@ -1,0 +1,36 @@
+.button {
+    &.login {
+        padding: 10px 43px;
+        background: #FFCD00;
+        border-radius: 29px;
+        &:hover{
+            background: #E63000;
+            color:#fff;
+        }
+    }
+
+    &.registration {
+        color: #5A1404;
+    }
+
+    &.download {
+        box-shadow: 0px 0px 37px #E7E7E7;
+        background: #E63000;
+        border-radius: 29px;
+        padding: 15px 60px;
+        text-transform: uppercase;
+        border:9px solid #fff;
+        display: inline-block;
+        color:#fff;
+        margin-left: 50%;
+        transform: translate(-50%,-50%);
+        margin-bottom: 81px;
+        &:hover{
+            box-shadow: 0 0 50px #ccc;
+            color:#fff;
+        }
+    }
+    &:hover{
+        color:#E63000;
+    }
+}
