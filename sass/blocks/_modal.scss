@@ -12,7 +12,7 @@
     justify-content: space-between;
     display: none;
     animation: modal .3s ease-in-out;
-    color: #5A1404;
+    color: $brown;
     fill:#5B1A0D;
     &>.close,
     &>.modal-end {
@@ -25,7 +25,7 @@
     height: 15px;
     padding: 20px 20px;
     align-items: center;
-    background: #FFCD00;
+    background: $yellow;
     text-transform: uppercase;
     color: inherit;
     font-weight: 500;

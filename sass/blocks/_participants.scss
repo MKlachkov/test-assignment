@@ -7,7 +7,7 @@
     &__title {
         text-align: center;
         text-transform: uppercase;
-        color: #5A1404;
+        color: $brown;
         margin-bottom: 23px;
     }
 
@@ -84,7 +84,7 @@
 
     &__info {
         text-align: center;
-        color: #5A1404;
+        color: $brown;
         font-weight: 400;
         font-size: 18px;
         line-height: 22px;

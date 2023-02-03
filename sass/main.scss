@@ -1,5 +1,6 @@
 @import "./base/base";
 @import "./base/reset";
+@import "./variables/variables";
 @import "./blocks/images";
 @import "./blocks/header";
 @import "./base/button";
@@ -35,7 +36,7 @@
 // //     display: block;
 // // }
 // // .images{
-// //     background: #FFCD00;
+// //     background: $yellow;
 // //     height: 797px;
 // // }
 // // .block{

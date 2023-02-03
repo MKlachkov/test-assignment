@@ -13,7 +13,7 @@
     &__info {
         &__title {
             text-transform: uppercase;
-            color: #5A1404;
+            color: $brown;
             margin-bottom: 23px;
             font-weight: 500;
             font-size: 16px;
@@ -22,7 +22,7 @@
     }
 
     &__phone {
-        color: #E63000;
+        color: $red;
         text-transform: uppercase;
         font-weight: 500;
         font-size: 36px;
@@ -44,13 +44,13 @@
     column-gap: 70px;
 
     &__item {
-        color: #5A1404;
+        color: $brown;
         font-weight: 500;
         font-size: 16px;
         line-height: 21px;
 
         &:hover {
-            color: #E63000;
+            color: $red;
         }
     }
 }
@@ -71,13 +71,13 @@
     &>li {
         width: 32px;
         height: 32px;
-        background: #FFCD00;
+        background: $yellow;
         border-radius: 5px;
         display: flex;
         justify-content: center;
         align-items: center;
         &:hover{
-            background: #E63000;
+            background: $red;
         }
     }
 

@@ -5,7 +5,7 @@
     top: 90px;
     padding-left: 20px;
     padding-top: 30px;
-    background: #FFCD00;
+    background: $yellow;
     z-index: 100000;
     display: none;
     padding-top: 11px;
@@ -29,7 +29,7 @@
     font-size: 16px;
     line-height: 21px;
     text-transform: uppercase;
-    color: #5A1404;
+    color: $brown;
     padding-bottom: 25px;
     margin-bottom: 25px;
     border-bottom: 1px solid #ECB200;

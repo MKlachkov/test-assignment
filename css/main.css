@@ -130,7 +130,7 @@ img {
       line-height: 46px;
       text-transform: uppercase;
       text-align: center;
-      color: #E63000;
+      color: #e63000;
       text-shadow: -3px 5px #fff;
       margin-bottom: 57px; }
     .header__bottom__list {
@@ -164,7 +164,7 @@ img {
     text-transform: uppercase;
     color: #5A1404; }
     .navigation__item:hover {
-      color: #E63000; }
+      color: #e63000; }
 
 .login-box {
   display: flex;
@@ -196,13 +196,13 @@ img {
   background: #FFCD00;
   border-radius: 29px; }
   .button.login:hover {
-    background: #E63000;
+    background: #e63000;
     color: #fff; }
 .button.registration {
   color: #5A1404; }
 .button.download {
   box-shadow: 0px 0px 37px #E7E7E7;
-  background: #E63000;
+  background: #e63000;
   border-radius: 29px;
   padding: 15px 60px;
   text-transform: uppercase;
@@ -216,7 +216,7 @@ img {
     box-shadow: 0 0 50px #ccc;
     color: #fff; }
 .button:hover {
-  color: #E63000; }
+  color: #e63000; }
 
 .participants {
   padding-top: 66px;
@@ -297,7 +297,7 @@ img {
     font-size: 16px;
     line-height: 21px; }
   .footer__phone {
-    color: #E63000;
+    color: #e63000;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 36px;
@@ -318,7 +318,7 @@ img {
     font-size: 16px;
     line-height: 21px; }
     .list__item:hover {
-      color: #E63000; }
+      color: #e63000; }
 
 .socialsMedia {
   display: flex;
@@ -339,7 +339,7 @@ img {
     justify-content: center;
     align-items: center; }
     .socialsMedia > li:hover {
-      background: #E63000; }
+      background: #e63000; }
   .socialsMedia__link {
     display: flex;
     align-items: center;
