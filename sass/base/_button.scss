@@ -5,7 +5,7 @@
         border-radius: 29px;
         &:hover{
             background: $red;
-            color:#fff;
+            color:$white;
         }
     }
     &.registration {
@@ -17,14 +17,14 @@
         border-radius: 29px;
         padding: 15px 60px;
         text-transform: uppercase;
-        border:9px solid #fff;
+        border:9px solid $white;
         display: inline-block;
-        color:#fff;
+        color:$white;
         margin-left: 50%;
         transform: translate(-50%,-50%);
         margin-bottom: 81px;
         &:hover{
-            background: #fff;
+            background: $white;
             color:$red;
             border:9px solid $red;
             box-shadow: 0px 0px 37px $red;

@@ -1,7 +1,7 @@
 .footer {
     border-top: 1px solid #000;
     padding-top: 22px;
-    background: #FEFEFE;
+    background: $gray;
 
     &__box {
         display: flex;
@@ -38,7 +38,7 @@
     }
 }
 
-.list {
+.footer__nav {
     display: flex;
     column-gap: 70px;
 
@@ -47,13 +47,15 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 21px;
+        text-align: center;
 
         &:hover {
             color: $red;
         }
     }
 }
-.socialsMedia {
+
+.socialMedia {
     &__title {
         color: #5B1A0D;
         font-weight: 400;
@@ -61,27 +63,26 @@
         line-height: 21px;
         margin-bottom: 11px;
     }
-
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-
-    &>li {
-        width: 32px;
-        height: 32px;
-        background: $yellow;
-        border-radius: 5px;
+    .socialsMedia {
         display: flex;
-        justify-content: center;
+        column-gap: 10px;
         align-items: center;
-        &:hover{
-            background: $red;
+        &>li {
+            width: 32px;
+            height: 32px;
+            background: $yellow;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                background: $red;
+            }
         }
     }
-
-    &__link {
-        display: flex;
-        align-items: center;
-        column-gap: 10px;
-    }
+    // &__link {
+    //     display: flex;
+    //     align-items: center;
+    //     column-gap: 10px;
+    // }
 }

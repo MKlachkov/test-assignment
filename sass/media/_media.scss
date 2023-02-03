@@ -51,36 +51,6 @@
         transform: translateY(-40px);
     }
 }
-@media(max-width:500px){
-    .header__bottom__list{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .header__bottom__list__item__arrow{
-        margin-top: 22px;
-        rotate: 90deg;
-        margin-bottom: 26px;
-    }
-    .arrow__left,.arrow__right{
-        display: none;
-    }
-    .button.download{
-        font-size: 14px;
-        line-height: 21px;
-        padding: 6px 33px;
-        word-wrap: break-word;
-        width: 170px;
-    }
-    .button.registration{
-        display: none;
-    }
-    .header__bottom{
-        &::before,&::after{
-            top: 300px;
-        }
-    }
-}
 @media(max-width:900px){
     .person{
         left: 150px;
@@ -144,6 +114,7 @@
         display: block;
     }
 }
+
 @media(max-width:600px){
     .person{
         top: 0;
@@ -186,6 +157,55 @@
         top: 0;
         max-width: 66px;
         max-height: 66px;
+    }
+}
+@media(max-width:586px){
+    .footer__box{
+        .footer__info,.footer__nav,.socialMedia{
+            text-align: center;
+            margin: 0 auto;
+        }
+        .footer__info{
+            order:2;
+            margin-bottom: 17px;
+        }
+        .footer__nav{
+            order:1;
+            margin-bottom: 25px;
+        }
+        .socialMedia{
+            order:3;
+        }
+    }
+}
+@media(max-width:500px){
+    .header__bottom__manual{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__bottom__manual__item__arrow{
+        margin-top: 22px;
+        rotate: 90deg;
+        margin-bottom: 26px;
+    }
+    .arrow__left,.arrow__right{
+        display: none;
+    }
+    .button.download{
+        font-size: 14px;
+        line-height: 21px;
+        padding: 6px 33px;
+        word-wrap: break-word;
+        width: 170px;
+    }
+    .button.registration{
+        display: none;
+    }
+    .header__bottom{
+        &::before,&::after{
+            top: 300px;
+        }
     }
 }
 @media(max-width:400px){

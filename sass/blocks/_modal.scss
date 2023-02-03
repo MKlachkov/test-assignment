@@ -1,7 +1,7 @@
 .modal {
     width: 500px;
     height: 250px;
-    background-color: #fff;
+    background-color: $white;
     border: 1px solid #000;
     position: fixed;
     top: 50%;
@@ -36,8 +36,8 @@
     top: 0;
     cursor: pointer;
     &:hover{
-        color:#fff;
-        fill:#fff;
+        color:$white;
+        fill:$white;
         background: #CA2A00;
     }
     &>svg {

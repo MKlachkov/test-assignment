@@ -3,6 +3,7 @@
     font-weight: 500;
     font-size: 36px;
     line-height: 46px;
+    background: linear-gradient(180.05deg, #EDEDED 22.63%, #FFFFFF 99.95%);
     &__title {
         text-align: center;
         text-transform: uppercase;
@@ -26,7 +27,8 @@
         background-size: cover;
         background-repeat: no-repeat;
         top: -26px;
-        left: 236px;
+        // left: 236px;
+        left: 16.46%;
         z-index: 1000;
     }
 }

@@ -131,26 +131,26 @@ img {
       text-transform: uppercase;
       text-align: center;
       color: #e63000;
-      text-shadow: -3px 5px #fff;
+      text-shadow: -3px 5px #FFF;
       margin-bottom: 57px; }
-    .header__bottom__list {
+    .header__bottom__manual {
       display: flex;
       justify-content: space-between;
       padding-bottom: 67px;
       flex-wrap: wrap; }
-      .header__bottom__list__item {
+      .header__bottom__manual__item {
         max-width: 221px;
         margin: 0 auto; }
-        .header__bottom__list__item__card > img {
+        .header__bottom__manual__item__card > img {
           margin-left: 50%;
           transform: translateX(-50%);
           margin-bottom: 21px; }
-        .header__bottom__list__item__card > p {
+        .header__bottom__manual__item__card > p {
           font-weight: 400;
           font-size: 20px;
           line-height: 22px;
           text-align: center; }
-        .header__bottom__list__item__arrow {
+        .header__bottom__manual__item__arrow {
           margin-top: 73px; }
 
 .navigation {
@@ -176,16 +176,6 @@ img {
   text-transform: uppercase;
   color: #5A1404; }
 
-@media (max-width: 586px) {
-  .footer__box .footer__info {
-    order: 2; }
-  .footer__box .list {
-    order: 1; }
-  .footer__box .socialMedia {
-    order: 3; }
-  .footer__box .footer__info, .footer__box .list, .footer__box .socialMedia {
-    text-align: center;
-    margin: 0 auto; } }
 .logo {
   display: flex;
   align-items: center;
@@ -197,7 +187,7 @@ img {
   border-radius: 29px; }
   .button.login:hover {
     background: #e63000;
-    color: #fff; }
+    color: #FFF; }
 .button.registration {
   color: #5A1404; }
 .button.download {
@@ -206,14 +196,14 @@ img {
   border-radius: 29px;
   padding: 15px 60px;
   text-transform: uppercase;
-  border: 9px solid #fff;
+  border: 9px solid #FFF;
   display: inline-block;
-  color: #fff;
+  color: #FFF;
   margin-left: 50%;
   transform: translate(-50%, -50%);
   margin-bottom: 81px; }
   .button.download:hover {
-    background: #fff;
+    background: #FFF;
     color: #e63000;
     border: 9px solid #e63000;
     box-shadow: 0px 0px 37px #e63000; }
@@ -225,6 +215,7 @@ img {
   font-weight: 500;
   font-size: 36px;
   line-height: 46px;
+  background: linear-gradient(180.05deg, #EDEDED 22.63%, #FFFFFF 99.95%);
   position: relative; }
   .participants__title {
     text-align: center;
@@ -244,7 +235,7 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     top: -26px;
-    left: 236px;
+    left: 16.46%;
     z-index: 1000; }
 
 .arrow__left, .arrow__right {
@@ -319,28 +310,29 @@ img {
     color: #5B1A0D;
     line-height: 21px; }
 
-.list {
+.footer__nav {
   display: flex;
   column-gap: 70px; }
-  .list__item {
+  .footer__nav__item {
     color: #5A1404;
     font-weight: 500;
     font-size: 16px;
-    line-height: 21px; }
-    .list__item:hover {
+    line-height: 21px;
+    text-align: center; }
+    .footer__nav__item:hover {
       color: #e63000; }
 
-.socialsMedia {
+.socialMedia__title {
+  color: #5B1A0D;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 11px; }
+.socialMedia .socialsMedia {
   display: flex;
-  align-items: center;
-  column-gap: 10px; }
-  .socialsMedia__title {
-    color: #5B1A0D;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    margin-bottom: 11px; }
-  .socialsMedia > li {
+  column-gap: 10px;
+  align-items: center; }
+  .socialMedia .socialsMedia > li {
     width: 32px;
     height: 32px;
     background: #FFCD00;
@@ -348,12 +340,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center; }
-    .socialsMedia > li:hover {
+    .socialMedia .socialsMedia > li:hover {
       background: #e63000; }
-  .socialsMedia__link {
-    display: flex;
-    align-items: center;
-    column-gap: 10px; }
 
 .burger__menu {
   width: 100%;
@@ -452,32 +440,6 @@ img {
     max-height: 166px;
     top: -70px;
     transform: translateY(-40px); } }
-@media (max-width: 500px) {
-  .header__bottom__list {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-
-  .header__bottom__list__item__arrow {
-    margin-top: 22px;
-    rotate: 90deg;
-    margin-bottom: 26px; }
-
-  .arrow__left, .arrow__right {
-    display: none; }
-
-  .button.download {
-    font-size: 14px;
-    line-height: 21px;
-    padding: 6px 33px;
-    word-wrap: break-word;
-    width: 170px; }
-
-  .button.registration {
-    display: none; }
-
-  .header__bottom::before, .header__bottom::after {
-    top: 300px; } }
 @media (max-width: 900px) {
   .person {
     left: 150px;
@@ -573,6 +535,44 @@ img {
     top: 0;
     max-width: 66px;
     max-height: 66px; } }
+@media (max-width: 586px) {
+  .footer__box .footer__info, .footer__box .footer__nav, .footer__box .socialMedia {
+    text-align: center;
+    margin: 0 auto; }
+  .footer__box .footer__info {
+    order: 2;
+    margin-bottom: 17px; }
+  .footer__box .footer__nav {
+    order: 1;
+    margin-bottom: 25px; }
+  .footer__box .socialMedia {
+    order: 3; } }
+@media (max-width: 500px) {
+  .header__bottom__manual {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+  .header__bottom__manual__item__arrow {
+    margin-top: 22px;
+    rotate: 90deg;
+    margin-bottom: 26px; }
+
+  .arrow__left, .arrow__right {
+    display: none; }
+
+  .button.download {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 6px 33px;
+    word-wrap: break-word;
+    width: 170px; }
+
+  .button.registration {
+    display: none; }
+
+  .header__bottom::before, .header__bottom::after {
+    top: 300px; } }
 @media (max-width: 400px) {
   .button.registration {
     display: none; }
@@ -614,7 +614,7 @@ img {
 .modal {
   width: 500px;
   height: 250px;
-  background-color: #fff;
+  background-color: #FFF;
   border: 1px solid #000;
   position: fixed;
   top: 50%;
@@ -647,8 +647,8 @@ img {
   top: 0;
   cursor: pointer; }
   .close__modal:hover {
-    color: #fff;
-    fill: #fff;
+    color: #FFF;
+    fill: #FFF;
     background: #CA2A00; }
   .close__modal > svg {
     fill: inherit; }
