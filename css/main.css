@@ -599,7 +599,7 @@ img {
   width: 500px;
   height: 250px;
   background-color: #fff;
-  border: 1px solid  #000;
+  border: 1px solid #000;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -608,11 +608,35 @@ img {
   z-index: 20000;
   justify-content: space-between;
   display: none;
-  animation: modal .3s ease-in-out; }
+  animation: modal .3s ease-in-out;
+  color: #5A1404;
+  fill: #5B1A0D; }
   .modal > .close, .modal > .modal-end {
     max-height: 50px; }
-  .modal .modal-end {
-    padding: 10px 20px; }
+
+.close__modal {
+  display: inline-flex;
+  text-align: right;
+  justify-content: start;
+  column-gap: 14px;
+  height: 15px;
+  padding: 20px 20px;
+  align-items: center;
+  background: #FFCD00;
+  text-transform: uppercase;
+  color: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer; }
+  .close__modal:hover {
+    color: #fff;
+    fill: #fff; }
+  .close__modal > svg {
+    fill: inherit; }
 
 @keyframes modal {
   0% {

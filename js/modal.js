@@ -1,9 +1,7 @@
 const login = document.querySelector('.button.login')
 const register = document.querySelector('.button.registration')
-const closeArrow = document.querySelector('.close')
-const modaEnd = document.querySelector('.modal-end')
+const modaEnd = document.querySelector('.close__modal')
 let isShow = false;
-
 
 register.onclick=function (){
     const modal = document.querySelector('.modal')
@@ -29,19 +27,6 @@ login.onclick=function (){
         isShow = true
     }
 };
-
-closeArrow.onclick=function(){
-    const modal = document.querySelector('.modal')
-    if (isShow){
-        modal.style.removeProperty('display')
-        modal.style.display = ''
-        isShow = false
-    }else{
-        modal.style.removeProperty('display')
-        modal.style.display = 'flex'
-        isShow = true
-    }
-}
 modaEnd.onclick=function(){
     const modal = document.querySelector('.modal')
     if (isShow){
