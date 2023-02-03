@@ -213,8 +213,10 @@ img {
   transform: translate(-50%, -50%);
   margin-bottom: 81px; }
   .button.download:hover {
-    box-shadow: 0 0 50px #ccc;
-    color: #fff; }
+    background: #fff;
+    color: #e63000;
+    border: 9px solid #e63000;
+    box-shadow: 0px 0px 37px #e63000; }
 .button:hover {
   color: #e63000; }
 
@@ -230,7 +232,9 @@ img {
     color: #5A1404;
     margin-bottom: 23px; }
   .participants__box__content {
-    display: flex; }
+    display: flex;
+    align-items: center;
+    position: relative; }
   .participants::before {
     content: "";
     position: absolute;
@@ -243,7 +247,13 @@ img {
     left: 236px;
     z-index: 1000; }
 
+.arrow__left, .arrow__right {
+  position: absolute;
+  top: 95px; }
+.arrow__left {
+  left: 0; }
 .arrow__right {
+  right: 0;
   rotate: 180deg; }
 
 .swiper {

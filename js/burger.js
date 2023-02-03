@@ -1,18 +1,18 @@
 const burger = document.querySelector('.burger')
-let isCliosed = true;
+const Menu = document.querySelector('.burger__menu');
+let isClosed = true;
 const height = window.screen.height;
 burger.onclick=function(){
-    document.querySelector('.burger__menu').classList.toggle("visible")
+    Menu.classList.toggle("visible")
     document.querySelector('.login-box').classList.toggle("hide")
     document.querySelector("body").style.height= height
     document.querySelector("body").style.overflowY='hidden'
-
-    if(isCliosed){
+    if(isClosed){
         burger.src='./images/close.svg'
-        isCliosed = false
+        isClosed = false
     }else{
         burger.src='./images/burger.svg'
-        isCliosed=true
+        isClosed=true
         document.querySelector("body").style.overflowY='auto'
     }
 };
