@@ -19,11 +19,8 @@
         max-height: 50px;
     }
 }
-// #5B1A0D
 .close__modal {
-    display: inline-flex;
-    text-align: right;
-    justify-content: start;
+    display: flex;
     column-gap: 14px;
     height: 15px;
     padding: 20px 20px;
@@ -41,6 +38,7 @@
     &:hover{
         color:#fff;
         fill:#fff;
+        background: #CA2A00;
     }
     &>svg {
         // fill:#5B1A0D;
