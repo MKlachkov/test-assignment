@@ -588,7 +588,10 @@ img {
     width: 136px; }
 
   .block {
-    left: 0; } }
+    left: 0; }
+
+  .participants__title {
+    font-size: 30px; } }
 @media (max-width: 360px) {
   .kitchen {
     transform: translateX(-110px);
