@@ -2,29 +2,33 @@
     position: relative;
     z-index: 1000;
     background: linear-gradient(180deg, $yellow-dark 0%, #FFCF00 78.83%);
-    &__top{
+
+    &__top {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 32px 23px;
+        padding: 32px 0 23px;
     }
+
     &__bottom {
         position: relative;
+
         &::before {
             content: '';
             position: absolute;
             width: 80px;
             height: 158px;
-            background-image: url("./../images/baloon.svg");
+            background-image: url("./../images/pseudoElements/baloon.svg");
             top: 40px;
             left: 27px;
         }
+
         &::after {
             content: '';
             position: absolute;
             width: 31px;
             height: 47px;
-            background-image: url("./../images/spiral2.svg");
+            background-image: url("./../images/pseudoElements/spiral2.svg");
             top: 57px;
             right: 57px;
         }
@@ -64,6 +68,7 @@
                         text-align: center;
                     }
                 }
+
                 &__arrow {
                     margin-top: 73px;
                 }
@@ -71,32 +76,38 @@
         }
     }
 }
+
 .navigation {
     display: flex;
     align-items: center;
     column-gap: 83px;
+
     &__item {
         font-weight: 500;
         font-size: 16px;
         line-height: 21px;
         text-transform: uppercase;
-        color: $brown;;
-        &:hover{
+        color: $brown;
+        ;
+
+        &:hover {
             color: $red;
         }
     }
 }
+
 .login-box {
     display: flex;
-    column-gap: 17px;
     align-items: center;
+    column-gap: 17px;
     font-weight: 500;
     font-size: 16px;
     line-height: 21px;
     text-transform: uppercase;
     color: $brown;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
     column-gap: 14px;

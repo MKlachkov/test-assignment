@@ -3,7 +3,20 @@
     font-weight: 500;
     font-size: 36px;
     line-height: 46px;
-    background: linear-gradient(180.05deg, #EDEDED 22.63%, #FFFFFF 99.95%);
+    background: linear-gradient(180.05deg, #EDEDED 22.63%, $white 99.95%);
+    position: relative;
+    &::before{
+        content:"";
+        position: absolute;
+        width: 45px;
+        height: 40px;
+        background-image: url("./../images/pseudoElements/spiral.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: -26px;
+        left: 16.46%;
+        z-index: 1000;
+    }
     &__title {
         text-align: center;
         text-transform: uppercase;
@@ -17,26 +30,14 @@
             position: relative;
         }
     }
-    position: relative;
-    &::before{
-        content:"";
-        position: absolute;
-        width: 45px;
-        height: 40px;
-        background-image: url("./../images/spiral.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        top: -26px;
-        // left: 236px;
-        left: 16.46%;
-        z-index: 1000;
-    }
 }
 
 .arrow {
     &__left,&__right{
         position: absolute;
         top: 95px;
+        cursor: pointer;
+        z-index: 100;
     }
     &__left {
         left: 0;
@@ -54,17 +55,20 @@
     &-pagination {
         &-bullet {
             background: #5B1A0D;
+            border:1px solid #5B1A0D;
+            width: 11px;
+            height: 11px;
+            opacity: 1;
             &-active {
                 background: none;
                 border: 1px solid #5B1A0D;
                 width: 11px;
                 height: 11px;
             }
-            background: #5B1A0D;
-            border:1px solid #5B1A0D;
-            width: 11px;
-            height: 11px;
-            opacity: 1;
+            &:hover{
+                background: $red;
+                border:1px solid $red;
+            }
         }
     }
     &-slide {
@@ -76,6 +80,8 @@
         justify-content: space-between;
         &>img {
             margin-bottom: 22px;
+            min-width: 128px;
+            min-height: 198px;
         }
     }
 }
@@ -83,7 +89,6 @@
 .product {
     margin-left: 50%;
     transform: translateX(-50%);
-
     &__info {
         text-align: center;
         color: $brown;

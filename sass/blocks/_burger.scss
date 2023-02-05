@@ -2,7 +2,7 @@
     width: 100%;
     height: 483px;
     position: absolute;
-    top: 90px;
+    top: 75px;
     padding-left: 20px;
     padding-top: 30px;
     background: $yellow;
@@ -10,15 +10,18 @@
     display: none;
     padding-top: 11px;
     animation: ShowMenu .5s ease-in-out;
-    &>.socialMedia>.socialsMedia>li{
-        width: 32px;
-        height: 32px;
-        background: $yellow-dark;
-        margin-top: 11px;
+    &>.contact{
+        margin-top: 25px;
+        &>.contact__box__item{
+        // width: 32px;
+        // height: 32px;
+        // margin-top: 11px;
+        background-color: #ECB200;
         &:hover{
             background: $red;
         }
     }
+}
 }
 .burger{
     display: none;
@@ -31,14 +34,13 @@
 .hide{
     display: none;
 }
-.burger__list__first {
+.burger__list {
     font-weight: 500;
     font-size: 16px;
     line-height: 21px;
     text-transform: uppercase;
     color: $brown;
     padding-bottom: 25px;
-    margin-bottom: 25px;
     border-bottom: 1px solid $yellow-dark;
     &>li+li {
         margin-top: 20px;
@@ -46,7 +48,7 @@
 }
 @keyframes ShowMenu{
     0%{
-        transform: translateY(-100%);
+        transform: translateY(-200%);
     }
     100%{
         transform: translateY(0);
