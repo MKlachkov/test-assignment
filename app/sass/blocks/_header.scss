@@ -112,6 +112,16 @@
     align-items: center;
     column-gap: 14px;
 }
+@media(max-width:760px){
+    .navigation {
+        display: none;
+    }
+    .button{
+        &.registration{
+            display: none;
+        }
+    }
+}
 
 @media(max-width:500px){
     .header__bottom__manual {

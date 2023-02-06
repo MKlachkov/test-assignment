@@ -57,9 +57,6 @@
   }
 }
 @media (max-width: 760px) {
-  .navigation {
-    display: none;
-  }
   .burger {
     display: block;
   }
@@ -468,6 +465,14 @@ a {
   column-gap: 14px;
 }
 
+@media (max-width: 760px) {
+  .navigation {
+    display: none;
+  }
+  .button.registration {
+    display: none;
+  }
+}
 @media (max-width: 500px) {
   .header__bottom__manual {
     flex-direction: column;
@@ -525,12 +530,22 @@ a {
   color: #e63000;
 }
 
+@media (max-width: 500px) {
+  .button.download {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 6px 33px;
+    word-wrap: break-word;
+    width: 170px;
+  }
+}
 @media (max-width: 400px) {
   .button.login {
     padding: 6px 22px;
   }
   .button.registration {
     display: none;
+    transform: none;
   }
 }
 .participants {
@@ -744,7 +759,6 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
   z-index: 20000;
   justify-content: space-between;
   display: none;
@@ -780,6 +794,10 @@ a {
 }
 .close__modal > svg {
   fill: inherit;
+}
+
+.toggleModal {
+  display: flex;
 }
 
 @keyframes modal {
