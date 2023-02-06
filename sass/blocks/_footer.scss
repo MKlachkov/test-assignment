@@ -78,3 +78,39 @@
         }
     }
 }
+@media(max-width:586px){
+    .footer__box {
+
+        .footer__info,
+        .footer__nav,
+        .socialMedia {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .footer__info {
+            order: 2;
+            margin-bottom: 17px;
+        }
+
+        .footer__nav {
+            order: 1;
+            margin-bottom: 25px;
+        }
+
+        .contact {
+            order: 3;
+        }
+
+    }
+}
+
+@media(max-width:500px){
+    .contact {
+        margin: 0 auto;
+
+        &__title {
+            text-align: center;
+        }
+    }
+}

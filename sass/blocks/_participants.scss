@@ -97,3 +97,16 @@
         line-height: 22px;
     }
 }
+
+@media(max-width:500px){
+    .arrow__left,
+    .arrow__right {
+        display: none;
+    }
+}
+
+@media(max-width:400px){
+    .participants__title {
+        font-size: 30px;
+    }
+}

@@ -112,3 +112,34 @@
     align-items: center;
     column-gap: 14px;
 }
+
+@media(max-width:500px){
+    .header__bottom__manual {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__bottom__manual__item__arrow {
+        margin-top: 22px;
+        rotate: 90deg;
+        margin-bottom: 26px;
+    }
+
+    .header__bottom {
+
+        &::before,
+        &::after {
+            top: 300px;
+        }
+        &__title {
+            font-size: 34px;
+        }
+    }
+    .logo {
+        &>img+* {
+            height: 21px;
+            width: 136px;
+        }
+    }
+}

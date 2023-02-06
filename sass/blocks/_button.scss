@@ -34,3 +34,14 @@
         color:$red;
     }
 }
+
+@media(max-width:400px){
+    .button {
+        &.login {
+            padding: 6px 22px;
+        }
+        &.registration {
+            display: none;
+        }
+    }
+}
