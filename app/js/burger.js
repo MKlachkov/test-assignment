@@ -1,6 +1,6 @@
 const burger = document.querySelector('.burger')
 const Menu = document.querySelector('.burger__menu')
-let isClosed = true;
+var isClosed = true
 function show(){
     Menu.classList.toggle("visible")
     document.querySelector('.login-box').classList.toggle("hide")

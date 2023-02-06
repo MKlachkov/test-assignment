@@ -2,7 +2,7 @@ const login = document.querySelector('.button.login')
 const register = document.querySelector('.button.registration')
 const modalEnd = document.querySelector('.close__modal')
 const modal = document.querySelector('.modal')
-let isShow = false;
+var isShow = false;
 function showModal() {
         modal.style.removeProperty('display')
         modal.style.display = 'flex'
