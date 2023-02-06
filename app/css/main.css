@@ -178,10 +178,10 @@ a {
   height: 100%;
 }
 
-@media (min-width: 1001px) {
+@media (max-width: 1920px) {
   .person {
-    top: 70px;
-    left: 160px;
+    top: 60px;
+    left: 170px;
     max-width: 557px;
     max-height: 509px;
     height: 509px;
@@ -207,6 +207,11 @@ a {
     z-index: 100;
   }
 }
+@media (max-width: 1200px) {
+  .block {
+    left: 70px;
+  }
+}
 @media (max-width: 1000px) {
   .block {
     top: 100px;
@@ -214,11 +219,16 @@ a {
     left: 70;
   }
   .person {
-    top: 100px;
+    top: 0px;
+    max-width: 423px;
   }
   .kitchen {
     max-width: 732px;
     max-height: 498px;
+  }
+  .text {
+    max-width: 458px;
+    max-height: 258px;
   }
   .oltermanni {
     max-width: 430px;
@@ -233,14 +243,26 @@ a {
 }
 @media (max-width: 900px) {
   .person {
-    left: 150px;
-    top: 130px;
+    left: 100px;
+    top: 0px;
+    max-width: 423px;
+  }
+  .text {
+    max-width: 458px;
+    max-height: 258px;
+  }
+  .block {
+    left: 0px;
+  }
+  .cirkl {
+    width: 140px;
+    height: 140px;
   }
 }
 @media (max-width: 800px) {
   .person {
     left: 200px;
-    top: 80px;
+    top: 60px;
     max-width: 323px;
     max-height: 304px;
     height: 304px;
@@ -258,6 +280,9 @@ a {
     right: 30px;
     top: -50px;
   }
+  .block {
+    left: 0;
+  }
   .text {
     max-width: 458px;
     max-height: 258px;
@@ -265,8 +290,8 @@ a {
 }
 @media (max-width: 700px) {
   .person {
-    left: 180px;
-    top: 50px;
+    left: 100px;
+    top: 0;
     max-width: 323px;
     max-height: 304px;
   }
@@ -282,6 +307,13 @@ a {
     right: 15px;
     max-height: 120px;
   }
+  .block {
+    left: 70px;
+  }
+  .text {
+    max-width: 308px;
+    max-height: 234px;
+  }
 }
 @media (max-width: 600px) {
   .person {
@@ -289,6 +321,10 @@ a {
     max-width: 223px;
     max-height: 304px;
     height: 304px;
+    left: 144px;
+  }
+  .block {
+    left: 20px;
   }
   .text {
     max-width: 308px;
