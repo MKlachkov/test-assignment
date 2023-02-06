@@ -62,5 +62,4 @@ gulp.task('run', async function () {
     });
 });
 
-
-gulp.task('build', gulp.series('sass', 'styles', 'scripts', 'compress', 'minify-html'));
+gulp.task('build', gulp.series('sass', 'styles', 'scripts', 'compress', 'minify-html', 'run'));
