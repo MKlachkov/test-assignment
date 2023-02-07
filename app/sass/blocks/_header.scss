@@ -2,14 +2,10 @@
     position: relative;
     z-index: 1000;
     background: linear-gradient(180deg, $yellow-dark 0%, #FFCF00 78.83%);
-
-    &__top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 32px 0 23px;
+    &__top{
+        background: $white;
+        position: relative;
     }
-
     &__bottom {
         position: relative;
 
@@ -32,19 +28,7 @@
             top: 57px;
             right: 57px;
         }
-
-        &__title {
-            font-weight: 500;
-            font-size: 60px;
-            line-height: 46px;
-            text-transform: uppercase;
-            text-align: center;
-            color: $red;
-            text-shadow: -3px 5px $white;
-            margin-bottom: 57px;
-        }
-
-        &__manual {
+        .manual__list {
             display: flex;
             justify-content: space-between;
             padding-bottom: 67px;
@@ -53,30 +37,43 @@
             &__item {
                 max-width: 221px;
                 margin: 0 auto;
-
-                &__card {
-                    &>img {
-                        margin-left: 50%;
-                        transform: translateX(-50%);
-                        margin-bottom: 21px;
-                    }
-
-                    &>p {
-                        font-weight: 400;
-                        font-size: 20px;
-                        line-height: 22px;
-                        text-align: center;
-                    }
-                }
-
-                &__arrow {
-                    margin-top: 73px;
-                }
+            }
+            &__arrow {
+                margin-top: 73px;
             }
         }
     }
 }
+.card {
+    &__image {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 21px;
+    }
 
+    &__text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 22px;
+        text-align: center;
+    }
+}
+.slogan {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 46px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $red;
+    text-shadow: -3px 5px $white;
+    margin-bottom: 57px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0 17px;
+}
 .navigation {
     display: flex;
     align-items: center;
@@ -124,13 +121,13 @@
 }
 
 @media(max-width:500px){
-    .header__bottom__manual {
+    .manual__list {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .header__bottom__manual__item__arrow {
+    .manual__arrow {
         margin-top: 22px;
         rotate: 90deg;
         margin-bottom: 26px;
