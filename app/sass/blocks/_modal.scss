@@ -1,59 +1,59 @@
 .modal {
-    width: 500px;
-    height: 250px;
-    background-color: $white;
-    border: 1px solid #000;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 20000;
-    justify-content: space-between;
-    display: none;
-    animation: modal .3s ease-in-out;
-    color: $brown;
-    fill:#5B1A0D;
-    &>.close,
-    &>.modal-end {
-        max-height: 50px;
-    }
+  width: 500px;
+  height: 250px;
+  background-color: $white;
+  border: 1px solid #000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20000;
+  justify-content: space-between;
+  display: none;
+  animation: modal 0.3s ease-in-out;
+  color: $brown;
+  fill: #5b1a0d;
+  & > .close,
+  & > .modal-end {
+    max-height: 50px;
+  }
 }
 .close__modal {
-    display: flex;
-    column-gap: 14px;
-    height: 15px;
-    padding: 20px 20px;
-    align-items: center;
-    background: $yellow;
-    text-transform: uppercase;
-    color: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 21px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    cursor: pointer;
-    &:hover{
-        color:$white;
-        fill:$white;
-        background: #CA2A00;
-    }
-    &>svg {
-        // fill:#5B1A0D;
-        fill:inherit;
-    }
+  display: flex;
+  column-gap: 14px;
+  height: 15px;
+  padding: 20px 20px;
+  align-items: center;
+  background: $yellow;
+  text-transform: uppercase;
+  color: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  &:hover {
+    color: $white;
+    fill: $white;
+    background: #ca2a00;
+  }
+  & > svg {
+    // fill:#5B1A0D;
+    fill: inherit;
+  }
 }
-.toggleModal{
-    display: flex;
+.toggleModal {
+  display: flex;
 }
 
 @keyframes modal {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }

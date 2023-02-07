@@ -1,14 +1,20 @@
-const login = document.querySelector('.button.login')
-const register = document.querySelector('.button.registration')
-const modalEnd = document.querySelector('.close__modal')
-const modal = document.querySelector('.modal')
+const login = document.querySelector(".button.login");
+const register = document.querySelector(".button.registration");
+const modalEnd = document.querySelector(".close__modal");
+const modal = document.querySelector(".modal");
 function toggleVisibility(option) {
-    if (option) {
-        modal.classList.toggle('toggleModal')
-    } else {
-        modal.classList.toggle('toggleModal')
-    }
+  if (option) {
+    modal.classList.toggle("toggleModal");
+  } else {
+    modal.classList.toggle("toggleModal");
+  }
+}
+register.onclick = () => {
+  toggleVisibility(true);
 };
-register.onclick = () => { toggleVisibility(true) };
-login.onclick = () => { toggleVisibility(true) };
-modalEnd.onclick = () => { toggleVisibility(false) };
+login.onclick = () => {
+  toggleVisibility(true);
+};
+modalEnd.onclick = () => {
+  toggleVisibility(false);
+};

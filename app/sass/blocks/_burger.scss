@@ -37,7 +37,8 @@
         justify-content: center;
         background: #ECB200;
         border-radius: 5px;
-        &:hover{
+
+        &:hover {
             background: $red;
         }
     }
@@ -66,6 +67,10 @@
     padding-bottom: 25px;
     border-bottom: 1px solid $yellow-dark;
     margin-bottom: 25px;
+}
+
+.menu__link:hover {
+    color: $red;
 }
 
 .menu__item+.menu__item {
