@@ -1,10 +1,8 @@
 .menu {
   width: 100%;
-  height: 483px;
   position: absolute;
-  top: 75px;
-  padding-left: 20px;
-  padding-top: 30px;
+  top: 80px;
+  padding: 30px 0 36px 20px;
   background: #FFCD00;
   z-index: 10000;
   display: none;
@@ -191,7 +189,7 @@ a {
   object-fit: contain;
 }
 
-.cirkl {
+.circle {
   position: absolute;
   right: 18px;
   top: 0;
@@ -220,7 +218,7 @@ a {
     max-width: 622px;
     transform: translateY(-80px);
   }
-  .cirkl {
+  .circle {
     transform: translateY(-160px);
     max-width: 176px;
     max-height: 176px;
@@ -259,7 +257,7 @@ a {
     max-width: 430px;
     transform: translateY(-40px);
   }
-  .cirkl {
+  .circle {
     max-width: 166px;
     max-height: 166px;
     top: -70px;
@@ -279,7 +277,7 @@ a {
   .block {
     left: 0px;
   }
-  .cirkl {
+  .circle {
     width: 140px;
     height: 140px;
   }
@@ -299,7 +297,7 @@ a {
   .oltermanni {
     max-width: 401px;
   }
-  .cirkl {
+  .circle {
     max-width: 120px;
     max-height: 120px;
     right: 30px;
@@ -327,7 +325,7 @@ a {
   .oltermanni {
     max-width: 301px;
   }
-  .cirkl {
+  .circle {
     max-width: 120px;
     right: 15px;
     max-height: 120px;
@@ -361,7 +359,7 @@ a {
   .oltermanni {
     max-width: 301px;
   }
-  .cirkl {
+  .circle {
     max-width: 122px;
     max-height: 122px;
   }
@@ -383,7 +381,7 @@ a {
     max-width: 201px;
     top: 5px;
   }
-  .cirkl {
+  .circle {
     top: 5px;
     max-width: 66px;
     max-height: 66px;
@@ -419,7 +417,7 @@ a {
   .images {
     margin-top: -50px;
   }
-  .cirkl {
+  .circle {
     top: 0;
   }
 }
@@ -877,8 +875,8 @@ a {
   }
 }
 .modal {
-  width: 500px;
-  height: 250px;
+  width: 320px;
+  height: 400px;
   background-color: #FFF;
   border: 1px solid #000;
   position: fixed;
