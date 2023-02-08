@@ -142,299 +142,91 @@ a {
   color: #000;
 }
 
-.images {
-  background: #FFCD00;
-  margin-top: -100px;
-  border-radius: 0 0 35% 35%;
-  overflow: hidden;
-  border-bottom: 18px solid #FFCD00;
-}
-
-.block {
-  display: flex;
+.img {
+  height: 707px;
+  width: 95%;
   position: relative;
+  overflow: hidden;
+  border-radius: 0 0 35% 35%;
+}
+@media (max-width: 1200px) {
+  .img {
+    height: 650px;
+  }
+}
+@media (max-width: 100px) {
+  .img {
+    height: 450px;
+  }
+}
+@media (max-width: 767px) {
+  .img {
+    height: 404px;
+  }
+}
+@media (max-width: 700px) {
+  .img {
+    height: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .img {
+    height: 250px;
+  }
+}
+@media (max-width: 400px) {
+  .img {
+    height: 200px;
+  }
 }
 
 .person {
+  max-width: 43%;
+  object-fit: cover;
   position: absolute;
-  left: 148px;
-  top: 70px;
-  max-width: 557px;
-  max-height: 509px;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  top: 3%;
+  left: 22%;
   z-index: 100;
 }
 
 .text {
-  max-width: 558px;
+  max-width: 43%;
   max-height: 358px;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  position: absolute;
+  left: 10%;
+  z-index: 100;
 }
 
 .kitchen {
-  max-width: 332px;
-  max-height: 198px;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  margin-right: 10px;
-}
-
-.kit {
-  display: flex;
-  position: relative;
-  max-width: 1314px;
+  max-width: 68%;
+  max-height: 66%;
+  position: absolute;
+  top: 38%;
+  left: 0;
+  display: block;
+  object-fit: cover;
 }
 
 .oltermanni {
   position: absolute;
   right: 0;
-  max-width: 201px;
-  width: 100%;
-  object-fit: contain;
+  top: 28%;
+  max-width: 47%;
+  height: auto;
+  object-fit: cover;
 }
 
 .circle {
+  max-width: 25%;
+  max-height: 25%;
   position: absolute;
-  right: 18px;
-  top: 0;
-  z-index: 100;
-  transform: translateY(-50%);
-  max-width: 66px;
-  max-height: 66px;
-  width: 100%;
-  height: 100%;
+  right: -5%;
+  transform: translateX(-50%);
+  top: 20%;
+  object-fit: cover;
 }
 
-@media (max-width: 1920px) {
-  .person {
-    top: 60px;
-    left: 170px;
-    max-width: 557px;
-    max-height: 509px;
-    height: 509px;
-    width: 557px;
-  }
-  .kitchen {
-    max-width: 891px;
-    max-height: 532px;
-  }
-  .oltermanni {
-    max-width: 622px;
-    transform: translateY(-80px);
-  }
-  .circle {
-    transform: translateY(-160px);
-    max-width: 176px;
-    max-height: 176px;
-    right: 39px;
-  }
-  .block {
-    left: 144px;
-    top: 120px;
-    z-index: 100;
-  }
-}
-@media (max-width: 1200px) {
-  .block {
-    left: 70px;
-  }
-}
-@media (max-width: 1000px) {
-  .block {
-    top: 100px;
-    z-index: 100;
-    left: 70;
-  }
-  .person {
-    top: 0px;
-    max-width: 423px;
-  }
-  .kitchen {
-    max-width: 732px;
-    max-height: 498px;
-  }
-  .text {
-    max-width: 458px;
-    max-height: 258px;
-  }
-  .oltermanni {
-    max-width: 430px;
-    transform: translateY(-40px);
-  }
-  .circle {
-    max-width: 166px;
-    max-height: 166px;
-    top: -70px;
-    transform: translateY(-40px);
-  }
-}
-@media (max-width: 900px) {
-  .person {
-    left: 100px;
-    top: 0px;
-    max-width: 423px;
-  }
-  .text {
-    max-width: 458px;
-    max-height: 258px;
-  }
-  .block {
-    left: 0px;
-  }
-  .circle {
-    width: 140px;
-    height: 140px;
-  }
-}
-@media (max-width: 800px) {
-  .person {
-    left: 200px;
-    top: 60px;
-    max-width: 323px;
-    max-height: 304px;
-    height: 304px;
-  }
-  .kitchen {
-    max-width: 632px;
-    max-height: 398px;
-  }
-  .oltermanni {
-    max-width: 401px;
-  }
-  .circle {
-    max-width: 120px;
-    max-height: 120px;
-    right: 30px;
-    top: -50px;
-  }
-  .block {
-    left: 0;
-  }
-  .text {
-    max-width: 458px;
-    max-height: 258px;
-  }
-}
-@media (max-width: 700px) {
-  .person {
-    left: 100px;
-    top: 0;
-    max-width: 323px;
-    max-height: 304px;
-  }
-  .kitchen {
-    max-width: 532px;
-    max-height: 298px;
-  }
-  .oltermanni {
-    max-width: 301px;
-  }
-  .circle {
-    max-width: 120px;
-    right: 15px;
-    max-height: 120px;
-  }
-  .block {
-    left: 70px;
-  }
-  .text {
-    max-width: 308px;
-    max-height: 234px;
-  }
-}
-@media (max-width: 600px) {
-  .person {
-    top: 0;
-    max-width: 223px;
-    max-height: 304px;
-    height: 304px;
-    left: 144px;
-  }
-  .block {
-    left: 20px;
-  }
-  .text {
-    max-width: 308px;
-    max-height: 234px;
-  }
-  .kitchen {
-    max-width: 432px;
-  }
-  .oltermanni {
-    max-width: 301px;
-  }
-  .circle {
-    max-width: 122px;
-    max-height: 122px;
-  }
-}
-@media (max-width: 500px) {
-  .person {
-    left: 80px;
-    max-width: 223px;
-    max-height: 204px;
-  }
-  .block {
-    left: 0px;
-  }
-  .text {
-    max-width: 208px;
-    max-height: 134px;
-  }
-  .oltermanni {
-    max-width: 201px;
-    top: 5px;
-  }
-  .circle {
-    top: 5px;
-    max-width: 66px;
-    max-height: 66px;
-  }
-}
-@media (max-width: 450px) {
-  .person {
-    left: 60px;
-  }
-}
-@media (max-width: 400px) {
-  .person {
-    left: 40px;
-  }
-}
-@media (max-width: 380px) {
-  .kitchen {
-    transform: translateX(-110px);
-    max-width: 350px;
-    max-height: 198px;
-  }
-  .person {
-    top: 20px;
-  }
-  .block {
-    left: 20px;
-    top: 45px;
-  }
-  .oltermanni {
-    transform: none;
-    top: 0;
-  }
-  .images {
-    margin-top: -50px;
-  }
-  .circle {
-    top: 0;
-  }
-}
-@media (max-width: 321px) {
-  .block {
-    transform: translateX(-10px);
-  }
-}
 .header {
   position: relative;
   z-index: 1000;
