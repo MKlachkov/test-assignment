@@ -46,6 +46,14 @@
   display: none;
   width: 23px;
   height: 17px;
+  background-image: url("./../images/burger/burger.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.burger--close {
+  background-image: url("./../images/burger/close.svg");
 }
 
 .visible {
