@@ -3,10 +3,10 @@ var gulp = require("gulp"),
   sass = require("gulp-sass")(require("sass")),
   cssnano = require("gulp-cssnano"),
   rename = require("gulp-rename"),
-  concat = require("gulp-concat");
-(minify = require("gulp-minify")),
-  (browserSync = require("browser-sync")),
-  (rigger = require("gulp-rigger"));
+  concat = require("gulp-concat"),
+  minify = require("gulp-minify"),
+  browserSync = require("browser-sync"),
+  rigger = require("gulp-rigger");
 //минимизация html
 gulp.task("minify-html", async function () {
   return gulp

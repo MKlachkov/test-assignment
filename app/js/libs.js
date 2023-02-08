@@ -1,46 +1,46 @@
-const burger = document.querySelector(".burger");
-const Menu = document.querySelector(".menu");
-var isClosed = true;
+const burger = document.querySelector(".burger"),
+Menu = document.querySelector(".menu")
+var isClosed = true
 async function show() {
   Menu.classList.toggle("visible");
-  document.querySelector(".login-box").classList.toggle("hide");
+  document.querySelector(".buttons").classList.toggle("hide");
   if (isClosed) {
     burger.src = "./images/burger/close.svg";
-    isClosed = false;
+    isClosed = false
   } else {
     burger.src = "./images/burger/burger.svg";
-    isClosed = true;
+    isClosed = true
   }
 }
-burger.onclick = function () {
-  show();
+burger.onclick =  ()=> {
+  show()
 };
 
-window.onscroll = function (e) {
+window.onscroll =  (e)=> {
   if (window.scrollY > 143 && Menu.classList.contains("visible")) {
-    show();
+    show()
   }
 };
 
-const login = document.querySelector(".button.login");
-const register = document.querySelector(".button.registration");
-const modalEnd = document.querySelector(".close__modal");
-const modal = document.querySelector(".modal");
-async function toggleVisibility(option) {
+const login = document.querySelector(".button.login"),
+  register = document.querySelector(".button.registration"),
+  modalEnd = document.querySelector(".close__modal"),
+  modal = document.querySelector(".modal")
+function toggleVisibility(option) {
   if (option) {
-    modal.classList.toggle("toggleModal");
-  } else {
-    modal.classList.toggle("toggleModal");
+    modal.classList.toggle("toggleModal")
+    return
   }
+  modal.classList.toggle("toggleModal")
 }
 register.onclick = () => {
-  toggleVisibility(true);
+  toggleVisibility(true)
 };
 login.onclick = () => {
-  toggleVisibility(true);
+  toggleVisibility(true)
 };
 modalEnd.onclick = () => {
-  toggleVisibility(false);
+  toggleVisibility(false)
 };
 
 const swiper = new Swiper(".swiper", {
