@@ -564,7 +564,7 @@ a {
   .header__bottom::before, .header__bottom::after {
     top: 300px;
   }
-  .header__bottom__title {
+  .slogan {
     font-size: 34px;
   }
   .logo > img + * {
