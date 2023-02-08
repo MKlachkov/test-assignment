@@ -8,7 +8,7 @@ const gulp = require("gulp"),
   browserSync = require("browser-sync"),
   rigger = require("gulp-rigger");
 //минимизация html
-gulp.task("minify-html", async function () {
+gulp.task("minify-html", async () => {
   return gulp
     .src("app/index.html")
     .pipe(
@@ -21,11 +21,11 @@ gulp.task("minify-html", async function () {
 });
 
 //Компиляция SASS
-gulp.task("sass", async function () {
+gulp.task("sass", async () => {
   return gulp.src("app/sass/main.scss").pipe(sass()).pipe(gulp.dest("app/css"));
 });
 //Минимизация CSS
-gulp.task("styles", async function () {
+gulp.task("styles", async () => {
   return gulp
     .src("app/css/main.css")
     .pipe(cssnano())
@@ -40,11 +40,11 @@ gulp.task("scripts", function () {
     .pipe(gulp.dest("app/js"));
 });
 //Сжатие скриптов
-gulp.task("compress", async function () {
+gulp.task("compress", async () => {
   gulp.src(["app/js/libs.js"]).pipe(minify()).pipe(gulp.dest("dist/js"));
 });
 //Запуск приложения
-gulp.task("run", async function () {
+gulp.task("run", async () => {
   browserSync.init({
     server: {
       baseDir: "dist",
@@ -53,7 +53,7 @@ gulp.task("run", async function () {
   });
 });
 
-gulp.task("htmlBuild", async function () {
+gulp.task("htmlBuild", async () => {
   gulp
     .src("app/templates/page.html")
     .pipe(rigger())
