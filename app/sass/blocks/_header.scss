@@ -140,10 +140,8 @@
   .slogan{
      font-size: 34px;
   }
-  .logo {
-    & > img + * {
-      height: 21px;
-      width: 136px;
-    }
-  }
+}
+.logo__img {
+  height: 21px;
+  width: 136px;
 }

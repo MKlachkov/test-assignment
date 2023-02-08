@@ -567,11 +567,12 @@ a {
   .slogan {
     font-size: 34px;
   }
-  .logo > img + * {
-    height: 21px;
-    width: 136px;
-  }
 }
+.logo__img {
+  height: 21px;
+  width: 136px;
+}
+
 .button.login {
   padding: 10px 43px;
   background: #FFCD00;
