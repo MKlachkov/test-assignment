@@ -1,4 +1,4 @@
-var gulp = require("gulp"),
+const gulp = require("gulp"),
   htmlmin = require("gulp-htmlmin"),
   sass = require("gulp-sass")(require("sass")),
   cssnano = require("gulp-cssnano"),
