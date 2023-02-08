@@ -24,6 +24,9 @@
     text-transform: uppercase;
     color: $brown;
     margin-bottom: 23px;
+    @media (max-width: 400px) {
+      font-size: 30px;
+    }
   }
 
   &__content {
@@ -132,11 +135,5 @@
   .swiper__slid {
     max-width: 128px;
     max-height: 198px;
-  }
-}
-
-@media (max-width: 400px) {
-  .participants__title {
-    font-size: 30px;
   }
 }

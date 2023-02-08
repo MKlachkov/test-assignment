@@ -54,6 +54,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    @media(max-width:760px) {
+            display: block;
+    }
 }
 .burger--close{
     background-image:url( './../images/burger/close.svg');
@@ -90,13 +93,6 @@
         transform: translateY(0);
     }
 }
-
-@media(max-width:760px) {
-    .burger {
-        display: block;
-    }
-}
-
 @media(max-width:586px) {
     .menu {
         &>.contact>.contact__title {

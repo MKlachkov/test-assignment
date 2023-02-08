@@ -51,6 +51,11 @@
   background-size: cover;
   background-position: center;
 }
+@media (max-width: 760px) {
+  .burger {
+    display: block;
+  }
+}
 
 .burger--close {
   background-image: url("./../images/burger/close.svg");
@@ -85,11 +90,6 @@
   }
   100% {
     transform: translateY(0);
-  }
-}
-@media (max-width: 760px) {
-  .burger {
-    display: block;
   }
 }
 @media (max-width: 586px) {
@@ -398,10 +398,6 @@ a {
   border: 9px solid #e63000;
   box-shadow: 0px 0px 37px #e63000;
 }
-.button:hover {
-  color: #e63000;
-}
-
 @media (max-width: 500px) {
   .button.download {
     font-size: 14px;
@@ -411,6 +407,10 @@ a {
     width: 190px;
   }
 }
+.button:hover {
+  color: #e63000;
+}
+
 @media (max-width: 400px) {
   .button.login {
     padding: 6px 22px;
@@ -445,6 +445,11 @@ a {
   text-transform: uppercase;
   color: #5A1404;
   margin-bottom: 23px;
+}
+@media (max-width: 400px) {
+  .participants__title {
+    font-size: 30px;
+  }
 }
 .participants__content {
   display: flex;
@@ -537,11 +542,6 @@ a {
   .swiper__slid {
     max-width: 128px;
     max-height: 198px;
-  }
-}
-@media (max-width: 400px) {
-  .participants__title {
-    font-size: 30px;
   }
 }
 .footer {
