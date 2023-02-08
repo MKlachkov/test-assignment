@@ -1,7 +1,7 @@
 const burger = document.querySelector(".burger");
 const Menu = document.querySelector(".menu");
 var isClosed = true;
-function show() {
+async function show() {
   Menu.classList.toggle("visible");
   document.querySelector(".login-box").classList.toggle("hide");
   if (isClosed) {
