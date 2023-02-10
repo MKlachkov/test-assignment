@@ -212,14 +212,13 @@ a {
   position: absolute;
   right: 0;
   top: 28%;
-  max-width: 47%;
+  width: 47%;
   height: auto;
   object-fit: cover;
 }
 
 .circle {
-  max-width: 25%;
-  max-height: 25%;
+  width: 13%;
   position: absolute;
   right: -5%;
   transform: translateX(-50%);
